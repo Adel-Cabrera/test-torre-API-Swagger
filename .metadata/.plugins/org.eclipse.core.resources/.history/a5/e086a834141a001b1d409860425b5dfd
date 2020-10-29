@@ -1,0 +1,19 @@
+package com.darkonnen.technicaltest.services;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.client.RestTemplate;
+
+public class JsonParsingService implements ParsingService{
+	
+	@Autowired
+	private RestTemplate restTemplate;
+
+	@Override
+	public Object parse(String url) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	
+
+}

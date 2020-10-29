@@ -1,0 +1,13 @@
+package com.darkonnen.technicaltest.data;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+import lombok.Data;
+
+@Data
+public class Person {
+	
+	@JsonProperty("name")
+	public String name;
+
+}

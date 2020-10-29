@@ -1,0 +1,49 @@
+package com.darkonnen.technicaltest.controllers;
+
+import java.util.List;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+
+import com.darkonnen.technicaltest.data.Job;
+import com.darkonnen.technicaltest.data.User;
+
+@Controller
+public class TorreApiRestController {
+	
+	private static String USER_URL = "https://torre.bio/api/bios/";
+
+	
+//	https://torre.bio/api/bios/$username 
+
+	@GetMapping("/user/{username}")
+	public User getUser(@PathVariable("username") String username) {
+		return new User();
+	}
+	
+	
+	
+//	 https://torre.co/api/opportunities/$id
+	
+	@GetMapping("/job/{jobId}")
+	public Job getJob(@PathVariable("jobId") String jobId) {
+		return new Job();
+	}
+	
+	@PostMapping("/people/")
+	public List<Job> getJobs(){
+		return new List<Job>;
+	}
+	
+	
+
+		
+	
+	
+}
+
+	
+	
+

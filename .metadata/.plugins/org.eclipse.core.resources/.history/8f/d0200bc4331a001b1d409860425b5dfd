@@ -1,0 +1,5 @@
+package com.darkonnen.technicaltest.services.impl;
+
+public class ParsingService {
+
+}

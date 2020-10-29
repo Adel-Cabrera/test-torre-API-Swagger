@@ -1,0 +1,5 @@
+package com.darkonnen.technicaltest.config;
+
+public class BeanConfig {
+
+}

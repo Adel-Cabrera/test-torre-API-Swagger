@@ -1,0 +1,10 @@
+package com.darkonnen.technicaltest.data;
+
+public class Username {
+	
+	
+	private String username;
+	
+	
+
+}

@@ -1,0 +1,9 @@
+package com.darkonnen.technicaltest.services;
+
+public interface ParsingService {
+	
+	
+	Object parse(String url);
+	
+
+}

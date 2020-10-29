@@ -1,0 +1,7 @@
+package com.darkonnen.technicaltest.data;
+
+public class Person {
+	
+	public String name;
+
+}

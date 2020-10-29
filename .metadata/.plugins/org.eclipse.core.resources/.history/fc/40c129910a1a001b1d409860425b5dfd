@@ -1,0 +1,266 @@
+package com.darkonnen.technicaltest.data;
+
+package com.example;
+
+import java.util.HashMap;
+import java.util.Map;
+import com.fasterxml.jackson.annotation.JsonAnyGetter;
+import com.fasterxml.jackson.annotation.JsonAnySetter;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+
+@JsonInclude(JsonInclude.Include.NON_NULL)
+@JsonPropertyOrder({
+"benefits",
+"canary",
+"enlauSource",
+"fake",
+"featureDiscovery",
+"getSignaledBenefitsViewed",
+"firstSignalSent",
+"promoteYourselfBenefitsViewed",
+"promoteYourselfCompleted",
+"importingLinkedin",
+"onBoarded",
+"remoter",
+"signalsFeatureDiscovery",
+"signedInToOpportunities",
+"importingLinkedinRecommendations",
+"contactsImported",
+"appContactsImported",
+"genomeCompletionAcknowledged"
+})
+public class Flags {
+
+@JsonProperty("benefits")
+private Boolean benefits;
+@JsonProperty("canary")
+private Boolean canary;
+@JsonProperty("enlauSource")
+private Boolean enlauSource;
+@JsonProperty("fake")
+private Boolean fake;
+@JsonProperty("featureDiscovery")
+private Boolean featureDiscovery;
+@JsonProperty("getSignaledBenefitsViewed")
+private Boolean getSignaledBenefitsViewed;
+@JsonProperty("firstSignalSent")
+private Boolean firstSignalSent;
+@JsonProperty("promoteYourselfBenefitsViewed")
+private Boolean promoteYourselfBenefitsViewed;
+@JsonProperty("promoteYourselfCompleted")
+private Boolean promoteYourselfCompleted;
+@JsonProperty("importingLinkedin")
+private Boolean importingLinkedin;
+@JsonProperty("onBoarded")
+private Boolean onBoarded;
+@JsonProperty("remoter")
+private Boolean remoter;
+@JsonProperty("signalsFeatureDiscovery")
+private Boolean signalsFeatureDiscovery;
+@JsonProperty("signedInToOpportunities")
+private Boolean signedInToOpportunities;
+@JsonProperty("importingLinkedinRecommendations")
+private Boolean importingLinkedinRecommendations;
+@JsonProperty("contactsImported")
+private Boolean contactsImported;
+@JsonProperty("appContactsImported")
+private Boolean appContactsImported;
+@JsonProperty("genomeCompletionAcknowledged")
+private Boolean genomeCompletionAcknowledged;
+@JsonIgnore
+private Map<String, Object> additionalProperties = new HashMap<String, Object>();
+
+@JsonProperty("benefits")
+public Boolean getBenefits() {
+return benefits;
+}
+
+@JsonProperty("benefits")
+public void setBenefits(Boolean benefits) {
+this.benefits = benefits;
+}
+
+@JsonProperty("canary")
+public Boolean getCanary() {
+return canary;
+}
+
+@JsonProperty("canary")
+public void setCanary(Boolean canary) {
+this.canary = canary;
+}
+
+@JsonProperty("enlauSource")
+public Boolean getEnlauSource() {
+return enlauSource;
+}
+
+@JsonProperty("enlauSource")
+public void setEnlauSource(Boolean enlauSource) {
+this.enlauSource = enlauSource;
+}
+
+@JsonProperty("fake")
+public Boolean getFake() {
+return fake;
+}
+
+@JsonProperty("fake")
+public void setFake(Boolean fake) {
+this.fake = fake;
+}
+
+@JsonProperty("featureDiscovery")
+public Boolean getFeatureDiscovery() {
+return featureDiscovery;
+}
+
+@JsonProperty("featureDiscovery")
+public void setFeatureDiscovery(Boolean featureDiscovery) {
+this.featureDiscovery = featureDiscovery;
+}
+
+@JsonProperty("getSignaledBenefitsViewed")
+public Boolean getGetSignaledBenefitsViewed() {
+return getSignaledBenefitsViewed;
+}
+
+@JsonProperty("getSignaledBenefitsViewed")
+public void setGetSignaledBenefitsViewed(Boolean getSignaledBenefitsViewed) {
+this.getSignaledBenefitsViewed = getSignaledBenefitsViewed;
+}
+
+@JsonProperty("firstSignalSent")
+public Boolean getFirstSignalSent() {
+return firstSignalSent;
+}
+
+@JsonProperty("firstSignalSent")
+public void setFirstSignalSent(Boolean firstSignalSent) {
+this.firstSignalSent = firstSignalSent;
+}
+
+@JsonProperty("promoteYourselfBenefitsViewed")
+public Boolean getPromoteYourselfBenefitsViewed() {
+return promoteYourselfBenefitsViewed;
+}
+
+@JsonProperty("promoteYourselfBenefitsViewed")
+public void setPromoteYourselfBenefitsViewed(Boolean promoteYourselfBenefitsViewed) {
+this.promoteYourselfBenefitsViewed = promoteYourselfBenefitsViewed;
+}
+
+@JsonProperty("promoteYourselfCompleted")
+public Boolean getPromoteYourselfCompleted() {
+return promoteYourselfCompleted;
+}
+
+@JsonProperty("promoteYourselfCompleted")
+public void setPromoteYourselfCompleted(Boolean promoteYourselfCompleted) {
+this.promoteYourselfCompleted = promoteYourselfCompleted;
+}
+
+@JsonProperty("importingLinkedin")
+public Boolean getImportingLinkedin() {
+return importingLinkedin;
+}
+
+@JsonProperty("importingLinkedin")
+public void setImportingLinkedin(Boolean importingLinkedin) {
+this.importingLinkedin = importingLinkedin;
+}
+
+@JsonProperty("onBoarded")
+public Boolean getOnBoarded() {
+return onBoarded;
+}
+
+@JsonProperty("onBoarded")
+public void setOnBoarded(Boolean onBoarded) {
+this.onBoarded = onBoarded;
+}
+
+@JsonProperty("remoter")
+public Boolean getRemoter() {
+return remoter;
+}
+
+@JsonProperty("remoter")
+public void setRemoter(Boolean remoter) {
+this.remoter = remoter;
+}
+
+@JsonProperty("signalsFeatureDiscovery")
+public Boolean getSignalsFeatureDiscovery() {
+return signalsFeatureDiscovery;
+}
+
+@JsonProperty("signalsFeatureDiscovery")
+public void setSignalsFeatureDiscovery(Boolean signalsFeatureDiscovery) {
+this.signalsFeatureDiscovery = signalsFeatureDiscovery;
+}
+
+@JsonProperty("signedInToOpportunities")
+public Boolean getSignedInToOpportunities() {
+return signedInToOpportunities;
+}
+
+@JsonProperty("signedInToOpportunities")
+public void setSignedInToOpportunities(Boolean signedInToOpportunities) {
+this.signedInToOpportunities = signedInToOpportunities;
+}
+
+@JsonProperty("importingLinkedinRecommendations")
+public Boolean getImportingLinkedinRecommendations() {
+return importingLinkedinRecommendations;
+}
+
+@JsonProperty("importingLinkedinRecommendations")
+public void setImportingLinkedinRecommendations(Boolean importingLinkedinRecommendations) {
+this.importingLinkedinRecommendations = importingLinkedinRecommendations;
+}
+
+@JsonProperty("contactsImported")
+public Boolean getContactsImported() {
+return contactsImported;
+}
+
+@JsonProperty("contactsImported")
+public void setContactsImported(Boolean contactsImported) {
+this.contactsImported = contactsImported;
+}
+
+@JsonProperty("appContactsImported")
+public Boolean getAppContactsImported() {
+return appContactsImported;
+}
+
+@JsonProperty("appContactsImported")
+public void setAppContactsImported(Boolean appContactsImported) {
+this.appContactsImported = appContactsImported;
+}
+
+@JsonProperty("genomeCompletionAcknowledged")
+public Boolean getGenomeCompletionAcknowledged() {
+return genomeCompletionAcknowledged;
+}
+
+@JsonProperty("genomeCompletionAcknowledged")
+public void setGenomeCompletionAcknowledged(Boolean genomeCompletionAcknowledged) {
+this.genomeCompletionAcknowledged = genomeCompletionAcknowledged;
+}
+
+@JsonAnyGetter
+public Map<String, Object> getAdditionalProperties() {
+return this.additionalProperties;
+}
+
+@JsonAnySetter
+public void setAdditionalProperty(String name, Object value) {
+this.additionalProperties.put(name, value);
+}
+
+}

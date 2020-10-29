@@ -1,0 +1,228 @@
+package com.darkonnen.technicaltest.data;
+
+package com.example;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import com.fasterxml.jackson.annotation.JsonAnyGetter;
+import com.fasterxml.jackson.annotation.JsonAnySetter;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+
+@JsonInclude(JsonInclude.Include.NON_NULL)
+@JsonPropertyOrder({
+"id",
+"category",
+"name",
+"organizations",
+"responsibilities",
+"fromMonth",
+"fromYear",
+"remote",
+"additionalInfo",
+"highlighted",
+"weight",
+"verifications",
+"recommendations",
+"media",
+"rank"
+})
+public class Experience {
+
+@JsonProperty("id")
+private String id;
+@JsonProperty("category")
+private String category;
+@JsonProperty("name")
+private String name;
+@JsonProperty("organizations")
+private List<Organization> organizations = null;
+@JsonProperty("responsibilities")
+private List<Object> responsibilities = null;
+@JsonProperty("fromMonth")
+private String fromMonth;
+@JsonProperty("fromYear")
+private String fromYear;
+@JsonProperty("remote")
+private Boolean remote;
+@JsonProperty("additionalInfo")
+private String additionalInfo;
+@JsonProperty("highlighted")
+private Boolean highlighted;
+@JsonProperty("weight")
+private Integer weight;
+@JsonProperty("verifications")
+private Integer verifications;
+@JsonProperty("recommendations")
+private Integer recommendations;
+@JsonProperty("media")
+private List<Object> media = null;
+@JsonProperty("rank")
+private Integer rank;
+@JsonIgnore
+private Map<String, Object> additionalProperties = new HashMap<String, Object>();
+
+@JsonProperty("id")
+public String getId() {
+return id;
+}
+
+@JsonProperty("id")
+public void setId(String id) {
+this.id = id;
+}
+
+@JsonProperty("category")
+public String getCategory() {
+return category;
+}
+
+@JsonProperty("category")
+public void setCategory(String category) {
+this.category = category;
+}
+
+@JsonProperty("name")
+public String getName() {
+return name;
+}
+
+@JsonProperty("name")
+public void setName(String name) {
+this.name = name;
+}
+
+@JsonProperty("organizations")
+public List<Organization> getOrganizations() {
+return organizations;
+}
+
+@JsonProperty("organizations")
+public void setOrganizations(List<Organization> organizations) {
+this.organizations = organizations;
+}
+
+@JsonProperty("responsibilities")
+public List<Object> getResponsibilities() {
+return responsibilities;
+}
+
+@JsonProperty("responsibilities")
+public void setResponsibilities(List<Object> responsibilities) {
+this.responsibilities = responsibilities;
+}
+
+@JsonProperty("fromMonth")
+public String getFromMonth() {
+return fromMonth;
+}
+
+@JsonProperty("fromMonth")
+public void setFromMonth(String fromMonth) {
+this.fromMonth = fromMonth;
+}
+
+@JsonProperty("fromYear")
+public String getFromYear() {
+return fromYear;
+}
+
+@JsonProperty("fromYear")
+public void setFromYear(String fromYear) {
+this.fromYear = fromYear;
+}
+
+@JsonProperty("remote")
+public Boolean getRemote() {
+return remote;
+}
+
+@JsonProperty("remote")
+public void setRemote(Boolean remote) {
+this.remote = remote;
+}
+
+@JsonProperty("additionalInfo")
+public String getAdditionalInfo() {
+return additionalInfo;
+}
+
+@JsonProperty("additionalInfo")
+public void setAdditionalInfo(String additionalInfo) {
+this.additionalInfo = additionalInfo;
+}
+
+@JsonProperty("highlighted")
+public Boolean getHighlighted() {
+return highlighted;
+}
+
+@JsonProperty("highlighted")
+public void setHighlighted(Boolean highlighted) {
+this.highlighted = highlighted;
+}
+
+@JsonProperty("weight")
+public Integer getWeight() {
+return weight;
+}
+
+@JsonProperty("weight")
+public void setWeight(Integer weight) {
+this.weight = weight;
+}
+
+@JsonProperty("verifications")
+public Integer getVerifications() {
+return verifications;
+}
+
+@JsonProperty("verifications")
+public void setVerifications(Integer verifications) {
+this.verifications = verifications;
+}
+
+@JsonProperty("recommendations")
+public Integer getRecommendations() {
+return recommendations;
+}
+
+@JsonProperty("recommendations")
+public void setRecommendations(Integer recommendations) {
+this.recommendations = recommendations;
+}
+
+@JsonProperty("media")
+public List<Object> getMedia() {
+return media;
+}
+
+@JsonProperty("media")
+public void setMedia(List<Object> media) {
+this.media = media;
+}
+
+@JsonProperty("rank")
+public Integer getRank() {
+return rank;
+}
+
+@JsonProperty("rank")
+public void setRank(Integer rank) {
+this.rank = rank;
+}
+
+@JsonAnyGetter
+public Map<String, Object> getAdditionalProperties() {
+return this.additionalProperties;
+}
+
+@JsonAnySetter
+public void setAdditionalProperty(String name, Object value) {
+this.additionalProperties.put(name, value);
+}
+
+}

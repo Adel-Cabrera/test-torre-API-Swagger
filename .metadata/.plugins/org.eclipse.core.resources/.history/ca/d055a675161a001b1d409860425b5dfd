@@ -1,0 +1,12 @@
+package com.darkonnen.technicaltest.data;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+@JsonIgnoreProperties
+public class Name {
+	
+	private String name;
+	
+	private String picture;
+
+}

@@ -1,0 +1,287 @@
+package com.darkonnen.technicaltest.data;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import com.fasterxml.jackson.annotation.JsonAnyGetter;
+import com.fasterxml.jackson.annotation.JsonAnySetter;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+
+@JsonInclude(JsonInclude.Include.NON_NULL)
+@JsonPropertyOrder({
+"professionalHeadline",
+"completion",
+"showPhone",
+"created",
+"verified",
+"flags",
+"weight",
+"locale",
+"subjectId",
+"picture",
+"hasEmail",
+"name",
+"links",
+"location",
+"theme",
+"id",
+"pictureThumbnail",
+"claimant",
+"weightGraph",
+"publicId"
+})
+public class Person {
+
+@JsonProperty("professionalHeadline")
+private String professionalHeadline;
+@JsonProperty("completion")
+private Double completion;
+@JsonProperty("showPhone")
+private Boolean showPhone;
+@JsonProperty("created")
+private String created;
+@JsonProperty("verified")
+private Boolean verified;
+@JsonProperty("weight")
+private Integer weight;
+@JsonProperty("locale")
+private String locale;
+@JsonProperty("subjectId")
+private String subjectId;
+@JsonProperty("picture")
+private String picture;
+@JsonProperty("hasEmail")
+private Boolean hasEmail;
+@JsonProperty("name")
+private String name;
+@JsonProperty("location")
+private Location location;
+@JsonProperty("theme")
+private String theme;
+@JsonProperty("id")
+private String id;
+@JsonProperty("pictureThumbnail")
+private String pictureThumbnail;
+@JsonProperty("claimant")
+private Boolean claimant;
+@JsonProperty("weightGraph")
+private String weightGraph;
+@JsonProperty("publicId")
+private String publicId;
+@JsonIgnore
+private Map<String, Object> additionalProperties = new HashMap<String, Object>();
+
+@JsonProperty("professionalHeadline")
+public String getProfessionalHeadline() {
+return professionalHeadline;
+}
+
+@JsonProperty("professionalHeadline")
+public void setProfessionalHeadline(String professionalHeadline) {
+this.professionalHeadline = professionalHeadline;
+}
+
+@JsonProperty("completion")
+public Double getCompletion() {
+return completion;
+}
+
+@JsonProperty("completion")
+public void setCompletion(Double completion) {
+this.completion = completion;
+}
+
+@JsonProperty("showPhone")
+public Boolean getShowPhone() {
+return showPhone;
+}
+
+@JsonProperty("showPhone")
+public void setShowPhone(Boolean showPhone) {
+this.showPhone = showPhone;
+}
+
+@JsonProperty("created")
+public String getCreated() {
+return created;
+}
+
+@JsonProperty("created")
+public void setCreated(String created) {
+this.created = created;
+}
+
+@JsonProperty("verified")
+public Boolean getVerified() {
+return verified;
+}
+
+@JsonProperty("verified")
+public void setVerified(Boolean verified) {
+this.verified = verified;
+}
+
+@JsonProperty("flags")
+public Flags getFlags() {
+return flags;
+}
+
+@JsonProperty("flags")
+public void setFlags(Flags flags) {
+this.flags = flags;
+}
+
+@JsonProperty("weight")
+public Integer getWeight() {
+return weight;
+}
+
+@JsonProperty("weight")
+public void setWeight(Integer weight) {
+this.weight = weight;
+}
+
+@JsonProperty("locale")
+public String getLocale() {
+return locale;
+}
+
+@JsonProperty("locale")
+public void setLocale(String locale) {
+this.locale = locale;
+}
+
+@JsonProperty("subjectId")
+public String getSubjectId() {
+return subjectId;
+}
+
+@JsonProperty("subjectId")
+public void setSubjectId(String subjectId) {
+this.subjectId = subjectId;
+}
+
+@JsonProperty("picture")
+public String getPicture() {
+return picture;
+}
+
+@JsonProperty("picture")
+public void setPicture(String picture) {
+this.picture = picture;
+}
+
+@JsonProperty("hasEmail")
+public Boolean getHasEmail() {
+return hasEmail;
+}
+
+@JsonProperty("hasEmail")
+public void setHasEmail(Boolean hasEmail) {
+this.hasEmail = hasEmail;
+}
+
+@JsonProperty("name")
+public String getName() {
+return name;
+}
+
+@JsonProperty("name")
+public void setName(String name) {
+this.name = name;
+}
+
+@JsonProperty("links")
+public List<Link> getLinks() {
+return links;
+}
+
+@JsonProperty("links")
+public void setLinks(List<Link> links) {
+this.links = links;
+}
+
+@JsonProperty("location")
+public Location getLocation() {
+return location;
+}
+
+@JsonProperty("location")
+public void setLocation(Location location) {
+this.location = location;
+}
+
+@JsonProperty("theme")
+public String getTheme() {
+return theme;
+}
+
+@JsonProperty("theme")
+public void setTheme(String theme) {
+this.theme = theme;
+}
+
+@JsonProperty("id")
+public String getId() {
+return id;
+}
+
+@JsonProperty("id")
+public void setId(String id) {
+this.id = id;
+}
+
+@JsonProperty("pictureThumbnail")
+public String getPictureThumbnail() {
+return pictureThumbnail;
+}
+
+@JsonProperty("pictureThumbnail")
+public void setPictureThumbnail(String pictureThumbnail) {
+this.pictureThumbnail = pictureThumbnail;
+}
+
+@JsonProperty("claimant")
+public Boolean getClaimant() {
+return claimant;
+}
+
+@JsonProperty("claimant")
+public void setClaimant(Boolean claimant) {
+this.claimant = claimant;
+}
+
+@JsonProperty("weightGraph")
+public String getWeightGraph() {
+return weightGraph;
+}
+
+@JsonProperty("weightGraph")
+public void setWeightGraph(String weightGraph) {
+this.weightGraph = weightGraph;
+}
+
+@JsonProperty("publicId")
+public String getPublicId() {
+return publicId;
+}
+
+@JsonProperty("publicId")
+public void setPublicId(String publicId) {
+this.publicId = publicId;
+}
+
+@JsonAnyGetter
+public Map<String, Object> getAdditionalProperties() {
+return this.additionalProperties;
+}
+
+@JsonAnySetter
+public void setAdditionalProperty(String name, Object value) {
+this.additionalProperties.put(name, value);
+}
+
+}

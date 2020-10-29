@@ -1,0 +1,200 @@
+package com.darkonnen.technicaltest.data;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import com.fasterxml.jackson.annotation.JsonAnyGetter;
+import com.fasterxml.jackson.annotation.JsonAnySetter;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+
+@JsonInclude(JsonInclude.Include.NON_NULL)
+@JsonPropertyOrder({
+"person",
+"stats",
+"strengths",
+"interests",
+"experiences",
+"awards",
+"jobs",
+"projects",
+"publications",
+"education",
+"opportunities",
+"languages",
+"personalityTraitsResults"
+})
+public class Example {
+
+@JsonProperty("person")
+private Person person;
+@JsonProperty("stats")
+private Stats stats;
+@JsonProperty("strengths")
+private List<Strength> strengths = null;
+@JsonProperty("interests")
+private List<Interest> interests = null;
+@JsonProperty("experiences")
+private List<Experience> experiences = null;
+@JsonProperty("awards")
+private List<Object> awards = null;
+@JsonProperty("jobs")
+private List<Job> jobs = null;
+@JsonProperty("projects")
+private List<Object> projects = null;
+@JsonProperty("publications")
+private List<Object> publications = null;
+@JsonProperty("education")
+private List<Object> education = null;
+@JsonProperty("opportunities")
+private List<Opportunity> opportunities = null;
+@JsonProperty("languages")
+private List<Language> languages = null;
+@JsonProperty("personalityTraitsResults")
+private PersonalityTraitsResults personalityTraitsResults;
+@JsonIgnore
+private Map<String, Object> additionalProperties = new HashMap<String, Object>();
+
+@JsonProperty("person")
+public Person getPerson() {
+return person;
+}
+
+@JsonProperty("person")
+public void setPerson(Person person) {
+this.person = person;
+}
+
+@JsonProperty("stats")
+public Stats getStats() {
+return stats;
+}
+
+@JsonProperty("stats")
+public void setStats(Stats stats) {
+this.stats = stats;
+}
+
+@JsonProperty("strengths")
+public List<Strength> getStrengths() {
+return strengths;
+}
+
+@JsonProperty("strengths")
+public void setStrengths(List<Strength> strengths) {
+this.strengths = strengths;
+}
+
+@JsonProperty("interests")
+public List<Interest> getInterests() {
+return interests;
+}
+
+@JsonProperty("interests")
+public void setInterests(List<Interest> interests) {
+this.interests = interests;
+}
+
+@JsonProperty("experiences")
+public List<Experience> getExperiences() {
+return experiences;
+}
+
+@JsonProperty("experiences")
+public void setExperiences(List<Experience> experiences) {
+this.experiences = experiences;
+}
+
+@JsonProperty("awards")
+public List<Object> getAwards() {
+return awards;
+}
+
+@JsonProperty("awards")
+public void setAwards(List<Object> awards) {
+this.awards = awards;
+}
+
+@JsonProperty("jobs")
+public List<Job> getJobs() {
+return jobs;
+}
+
+@JsonProperty("jobs")
+public void setJobs(List<Job> jobs) {
+this.jobs = jobs;
+}
+
+@JsonProperty("projects")
+public List<Object> getProjects() {
+return projects;
+}
+
+@JsonProperty("projects")
+public void setProjects(List<Object> projects) {
+this.projects = projects;
+}
+
+@JsonProperty("publications")
+public List<Object> getPublications() {
+return publications;
+}
+
+@JsonProperty("publications")
+public void setPublications(List<Object> publications) {
+this.publications = publications;
+}
+
+@JsonProperty("education")
+public List<Object> getEducation() {
+return education;
+}
+
+@JsonProperty("education")
+public void setEducation(List<Object> education) {
+this.education = education;
+}
+
+@JsonProperty("opportunities")
+public List<Opportunity> getOpportunities() {
+return opportunities;
+}
+
+@JsonProperty("opportunities")
+public void setOpportunities(List<Opportunity> opportunities) {
+this.opportunities = opportunities;
+}
+
+@JsonProperty("languages")
+public List<Language> getLanguages() {
+return languages;
+}
+
+@JsonProperty("languages")
+public void setLanguages(List<Language> languages) {
+this.languages = languages;
+}
+
+@JsonProperty("personalityTraitsResults")
+public PersonalityTraitsResults getPersonalityTraitsResults() {
+return personalityTraitsResults;
+}
+
+@JsonProperty("personalityTraitsResults")
+public void setPersonalityTraitsResults(PersonalityTraitsResults personalityTraitsResults) {
+this.personalityTraitsResults = personalityTraitsResults;
+}
+
+@JsonAnyGetter
+public Map<String, Object> getAdditionalProperties() {
+return this.additionalProperties;
+}
+
+@JsonAnySetter
+public void setAdditionalProperty(String name, Object value) {
+this.additionalProperties.put(name, value);
+}
+
+}

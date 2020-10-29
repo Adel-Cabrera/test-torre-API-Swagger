@@ -1,0 +1,13 @@
+package com.darkonnen.technicaltest.data;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+@JsonIgnoreProperties
+public class User {
+	
+	private String name;
+	
+	
+
+	
+}

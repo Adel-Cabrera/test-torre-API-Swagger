@@ -1,0 +1,29 @@
+package com.darkonnen.technicaltest.controllers;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+
+import com.darkonnen.technicaltest.data.User;
+import com.darkonnen.technicaltest.services.ParsingService;
+
+@Controller
+public class TorreApiRestController {
+	
+	private static String USER_URL = "https://torre.bio/api/bios/";
+		
+	private ParsingService parsingService;
+	
+	
+	@GetMapping("/user/{id}")
+	public String getUser(@PathVariable("id") String id) {
+		
+		User user = (User) parsingService.parse(USER_URL + id);
+		
+		return "index.jsp";
+		
+	}
+	
+	
+
+}
