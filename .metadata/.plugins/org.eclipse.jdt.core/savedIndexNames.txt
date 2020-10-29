@@ -40,7 +40,6 @@ INDEX VERSION 1.131+/home/darkonnen/Documents/spring-projects/test-torre/.metada
 490806120.index
 256516809.index
 199530882.index
-2214887623.index
 2708279554.index
 1454149577.index
 4270787369.index
